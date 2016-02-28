@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <title>Element TD Towers</title>
+    <meta name="description" content="Element TD Towers" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="http://www.eletd.com/Content/bootstrap-theme.min.css" rel="stylesheet"/>
+<link href="http://www.eletd.com/Content/bootstrap.min.css" rel="stylesheet"/>
+<link href="http://www.eletd.com/Content/site.css" rel="stylesheet"/>
+<link href="http://www.eletd.com/Content/main.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://www.eletd.com/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="tower-graph">
+    <table class="towers" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <th class="elements"><span>Elements</span></th>
+            <th class="duals"><span>Duals</span></th>
+            <th class="triples"><span>Triples</span></th>
+        </tr>
+        <tr class="el light">
+            <td class="elements"><a href="#light" class="tower t-light el-l r-15"><span><img src="Images/graph/light.png"/></span></a></td>
+            <td class="duals">
+                <a href="#trickery" class="tower t-trickery el-l el-d f-b r-9">Trickery<span><img src="Images/graph/trickery.png"/></span></a>
+                <a href="#ice" class="tower t-ice el-l el-w f-o r-9">Ice<span><img src="Images/graph/ice.png"/></span></a>
+                <a href="#quark" class="tower t-quark el-l el-e f-o r-7">Quark<span><img src="Images/graph/quark.png"/></span></a>
+            </td>
+            <td class="triples">
+                <a href="#nova" class="tower t-nova el-l el-f el-n f-s r-7">Nova<span><img src="Images/graph/nova.png"/></span></a>
+                <a href="#hail" class="tower t-hail el-l el-d el-w f-o r-15">Hail<span><img src="Images/graph/hail.png"/></span></a>
+                <a href="#laser" class="tower t-laser el-l el-d el-e r-9">Laser<span><img src="Images/graph/laser.png"/></span></a>
+            </td>
+        </tr>
+        <tr class="el dark">
+            <td class="elements"><a href="#dark" class="tower t-dark el-d r-11"><span><img src="Images/graph/dark.png"/></span></a></td>
+            <td class="duals">
+                <a href="#poison" class="tower t-poison el-d el-w r-9">Poison<span><img src="Images/graph/poison.png"/></span></a>
+                <a href="#disease" class="tower t-disease el-d el-n r-5">Disease<span><img src="Images/graph/disease.png"/></span></a>
+                <a href="#magic" class="tower t-magic el-d el-f r-11">Magic<span><img src="Images/graph/magic.png"/></span></a>
+            </td>
+            <td class="triples">
+                <a href="#jinx" class="tower t-jinx el-d el-f el-n f-a r-7">Jinx<span><img src="Images/graph/jinx.png"/></span></a>
+                <a href="#runic" class="tower t-runic el-d el-f el-l f-o r-7">Runic<span><img src="Images/graph/runic.png"/></span></a>
+                <a href="#obliteration" class="tower t-obliteration el-d el-l el-n f-o r-11">Obliteration<span><img src="Images/graph/obliteration.png"/></span></a>
+            </td>
+        </tr>
+        <tr class="el water">
+            <td class="elements"><a href="#water" class="tower t-water el-w r-9"><span><img src="Images/graph/water.png"/></span></a></td>
+            <td class="duals">
+                <a href="#well" class="tower t-well el-w el-n f-b r-9">Well<span><img src="Images/graph/well.png"/></span></a>
+                <a href="#vapor" class="tower t-vapor el-w el-f f-o r-7">Vapor<span><img src="Images/graph/vapor.png"/></span></a>
+            </td>
+            <td class="triples">
+                <a href="#windstorm" class="tower t-windstorm el-w el-f el-l f-s r-9">Windstorm<span><img src="Images/graph/windstorm.png"/></span></a>
+                <a href="#polar" class="tower t-polar el-w el-l el-e f-a r-9">Polar<span><img src="Images/graph/polar.png"/></span></a>
+                <a href="#flooding" class="tower t-flooding el-w el-d el-n f-o r-9">Flooding<span><img src="Images/graph/flooding.png"/></span></a>
+                <a href="#tidal" class="tower t-tidal el-w el-n el-l f-o r-7">Tidal<span><img src="Images/graph/tidal.png"/></span></a>
+            </td>
+        </tr>
+        <tr class="el fire">
+            <td class="elements"><a href="#fire" class="tower t-fire el-f r-5"><span><img src="Images/graph/fire.png"/></span></a></td>
+            <td class="duals">
+                <a href="#blacksmith" class="tower t-blacksmith el-f el-e f-b r-9">Blacksmith<span><img src="Images/graph/blacksmith.png"/></span></a>
+                <a href="#electricity" class="tower t-electricity el-f el-l f-o r-11">Electricity<span><img src="Images/graph/electricity.png"/></span></a>
+                <a href="#flame" class="tower t-flame el-f el-n r-7">Flame<span><img src="Images/graph/flame.png"/></span></a>
+            </td>
+            <td class="triples">
+                <a href="#haste" class="tower t-haste el-f el-e el-w r-9">Haste<span><img src="Images/graph/haste.png"/></span></a>
+                <a href="#erosion" class="tower t-erosion el-f el-d el-w f-a r-7">Erosion<span><img src="Images/graph/erosion.png"/></span></a>
+                <a href="#flamethrower" class="tower t-flamethrower el-f el-d el-e f-o r-7">Flamethrower<span><img src="Images/graph/flamethrower.png"/></span></a>
+            </td>
+        </tr>
+        <tr class="el nature">
+            <td class="elements"><a href="#nature" class="tower t-nature el-n r-7"><span><img src="Images/graph/nature.png"/></span></a></td>
+            <td class="duals">
+                <a href="#life" class="tower t-life el-n el-l f-b r-11">Life<span><img src="Images/graph/life.png"/></span></a>
+                <a href="#moss" class="tower t-moss el-n el-e f-o r-7">Moss<span><img src="Images/graph/moss.png"/></span></a>
+            </td>
+            <td class="triples">
+                <a href="#roots" class="tower t-roots el-n el-d el-e f-s r-9">Roots<span><img src="Images/graph/roots.png"/></span></a>
+                <a href="#enchantment" class="tower t-enchantment el-n el-l el-e f-a r-9">Enchantment<span><img src="Images/graph/enchantment.png"/></span></a>
+                <a href="#impulse" class="tower t-impulse el-n el-f el-w r-15">Impulse<span><img src="Images/graph/impulse.png"/></span></a>
+                <a href="#ephemeral" class="tower t-ephemeral el-n el-e el-w r-7">Ephemeral<span><img src="Images/graph/ephemeral.png"/></span></a>
+            </td>
+        </tr>
+        <tr class="el earth">
+            <td class="elements"><a href="#earth" class="tower t-earth el-e r-9"><span><img src="Images/graph/earth.png"/></span></a></td>
+            <td class="duals">
+                <a href="#gunpowder" class="tower t-gunpowder el-e el-d f-o r-15">Gunpowder<span><img src="Images/graph/gunpowder.png"/></span></a>
+                <a href="#hydro" class="tower t-hydro el-e el-w f-o r-7">Hydro<span><img src="Images/graph/hydro.png"/></span></a>
+            </td>
+            <td class="triples">
+                <a href="#muck" class="tower t-muck el-e el-w el-d f-s r-7">Muck<span><img src="Images/graph/muck.png"/></span></a>
+                <a href="#gold" class="tower t-gold el-e el-f el-l f-b r-11">Gold<span><img src="Images/graph/gold.png"/></span></a>
+                <a href="#quake" class="tower t-quake el-e el-f el-n f-o r-5">Quake<span><img src="Images/graph/quake.png"/></span></a>
+            </td>
+        </tr>
+    
+    </table>
+    <div class="filters">
+        <div class="eff">
+            <span>Effect</span>
+            <a href="#buff" class="filter buff" data-f="b">Buff</a>
+            <a href="#slow" class="filter slow" data-f="s">Slow</a>
+            <a href="#amp"  class="filter amp" data-f="a">Amp</a>
+            <a href="#aoe"  class="filter aoe" data-f="o">AOE</a>
+        </div>
+        <div class="rng">
+            <span>Range</span>
+            <a href="#range-550" class="filter" data-r="5">550</a>
+            <a href="#range-700" class="filter" data-r="7">700</a>
+            <a href="#range-900" class="filter" data-r="9">900</a>
+            <a href="#range-1150" class="filter" data-r="11">1150</a>
+            <a href="#range-1500" class="filter" data-r="15">1500</a>
+        </div>
+    </div>
+    <div id="tower-tooltip" class="tower-tooltip"></div>
+</div>
+<style>
+#tower-graph { color: #fff; position: relative; padding-bottom: 200px; font-size: 13px; line-height: 1.231; vertical-align: top; }
+#tower-graph a { color: #fff; text-decoration: none; }
+#tower-graph.hovered a { opacity: 0.4; }
+#tower-graph a.hi { opacity: 1; }
+
+#tower-graph table.towers { width: 77em; margin: 1em auto; 
+    background: rgba(0,0,0,0.5); padding: 0; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,0.7); text-transform: uppercase; }
+#tower-graph table.towers th.elements { width: 8em; padding-right: 3em; }
+#tower-graph table.towers th.duals { width: 26em; text-align: left; }
+#tower-graph table.towers th.triples { text-align: left; }
+#tower-graph table.towers th.elements span { width: 7.7em; display: block; text-align: center; margin: 0; }
+#tower-graph table.towers th.duals span { padding-left: 10em; }
+#tower-graph table.towers th.triples span { padding-left: 11.3em; }
+#tower-graph table.towers tr td,
+#tower-graph table.towers tr th { padding: 1em; }
+#tower-graph table.towers tr.el { background: rgba(0,0,0,0.2); }
+#tower-graph table.towers tr.el td { border-top: 1px solid rgba(0,0,0,0.1); padding-bottom: 1.5em; }
+#tower-graph table.towers a.tower { float: left; text-align: center; width: 7.7em; position: relative; }
+#tower-graph table.towers a.tower span { width: 5.4em; height: 5.4em; margin: 0 auto; display: block; background: rgba(0,0,0,0.5); margin-top: 0.2em; }
+#tower-graph table.towers a.tower span img { width: 5.4em; height: 5.4em; }
+#tower-graph table.towers td.elements { text-align: center; }
+#tower-graph table.towers td.triples a.tower {  width: 8.8em; }
+
+#tower-graph table.towers td.elements a.tower span { width: 6em; height: 6em; background: none; border-radius: 3em; }
+#tower-graph table.towers td.elements a.tower span img { width: 6em; height: 6em; }
+
+#tower-graph table.towers tr.light  td { background: rgba(255,255,0,0.1); }
+#tower-graph table.towers tr.dark   td { background: rgba(128,0,255,0.1); }
+#tower-graph table.towers tr.water  td { background: rgba(0,128,255,0.1); }
+#tower-graph table.towers tr.fire   td { background: rgba(255,0,0,0.1); }
+#tower-graph table.towers tr.nature td { background: rgba(0,255,0,0.1); }
+#tower-graph table.towers tr.earth  td { background: rgba(255,128,0,0.1); }
+
+#tower-graph table.towers tr.light  a.hi span { box-shadow: 0 0 2em rgba(255,255,0,1); }
+#tower-graph table.towers tr.dark   a.hi span { box-shadow: 0 0 2em rgba(128,0,255,1); }
+#tower-graph table.towers tr.water  a.hi span { box-shadow: 0 0 2em rgba(0,128,255,1); }
+#tower-graph table.towers tr.fire   a.hi span { box-shadow: 0 0 2em rgba(255,0,0,1); }
+#tower-graph table.towers tr.nature a.hi span { box-shadow: 0 0 2em rgba(0,255,0,1); }
+#tower-graph table.towers tr.earth  a.hi span { box-shadow: 0 0 2em rgba(255,128,0,1); }
+
+#tower-graph div.filters { width: 77em; margin: 0 auto; }
+#tower-graph div.filters span { float: left; line-height: 2.1em; color: rgba(0,0,0,0.5); padding: 0 0.5em 0 0; }
+#tower-graph div.filters .eff { float: right; }
+#tower-graph div.filters .rng { float: left; }
+#tower-graph div.filters a { float: left; background: rgba(0,0,0,0.5); width: 4.5em; margin-left: 1em; line-height: 2.1em; text-align: center; 
+    text-shadow: 0 0 5px rgba(0,0,0,0.7); text-transform: uppercase; }
+
+#tower-graph .tower-tooltip { display: none; width: 25em; background: rgba(32,32,32,0.9); padding: 1em; clear:both; box-shadow: 0 0 1em rgba(0,0,0,0.5); 
+    position: absolute; top: 100%; left: 4px; z-index: 100; text-align: left; text-transform: none; margin-top: 1em; }
+#tower-graph .tower-tooltip p { margin: 0; color: #ccc; clear: both; margin-bottom: 0.2em; }
+#tower-graph .tower-tooltip strong { color: #fff; margin-right: 0.3em; }
+#tower-graph .tower-tooltip img.type { height: 1.4em; width: 1.4em; margin-bottom: -0.3em; margin-right: 1px; }
+#tower-graph .tower-tooltip .name { display: block; color: #fff; font-size: 1.3em; line-height: 1.1em; margin-bottom: 0.5em; clear: none; }
+#tower-graph .tower-tooltip .elements { float: right; }
+#tower-graph .tower-tooltip.leftish { right: 1em; left: auto; }
+#tower-graph .tower-tooltip.topish { top: 0; bottom: auto; margin-top: -200%; }
+
+@media (max-width: 384px) {
+    #tower-graph { font-size: 4px; }
+}
+@media (min-width: 385px) and (max-width: 461px) {
+    #tower-graph { font-size: 5px; }
+}
+@media (min-width: 462px) and (max-width: 538px) {
+    #tower-graph { font-size: 6px; }
+}
+@media (min-width: 539px) and (max-width: 615px) {
+    #tower-graph { font-size: 7px; }
+}
+@media (min-width: 616px) and (max-width: 692px) {
+    #tower-graph { font-size: 8px; }
+}
+@media (min-width: 693px) and (max-width: 769px) {
+    #tower-graph { font-size: 9px; }
+}
+@media (min-width: 770px) and (max-width: 846px) {
+    #tower-graph { font-size: 10px; }
+}
+@media (min-width: 847px) and (max-width: 923px) {
+    #tower-graph { font-size: 11px; }
+}
+@media (min-width: 924px) and (max-width: 1000px) {
+    #tower-graph { font-size: 12px; }
+}
+
+</style>
+<script type="text/template" id="template-tower-graph-tooltip">
+<div class="elements">
+    {{#type_1}}<img src="Images/graph/{{type_1}}.png" class="type"/>{{/type_1}}
+    {{#type_2}}<img src="Images/graph/{{type_2}}.png" class="type"/>{{/type_2}}
+    {{#type_3}}<img src="Images/graph/{{type_3}}.png" class="type"/>{{/type_3}}
+</div>
+<p class="name">{{name}}</p>
+<p class="damage"><strong><img src="Images/graph/{{type}}.png" class="type"/> Damage</strong> {{damage}}</p>
+<p><strong>Cost</strong> {{cost}}</p>
+<p><strong>Speed</strong> {{speed}}</p>
+<p><strong>Range</strong> {{range}}</p>
+{{#ability}}<p><strong>Ability</strong> {{ability}}</p>{{/ability}}
+{{#duration}}<p><strong>Duration</strong> {{duration}}</p>{{/duration}}
+{{#aoe}}<p><strong>AoE</strong> {{aoe}}</p>{{/aoe}}
+{{#slow}}<p><strong>Movement Slow</strong> {{slow}}</p>{{/slow}}
+{{#amp}}<p><strong>Damage Amp</strong> {{amp}}</p>{{/amp}}
+{{#buff}}<p><strong>Buff</strong> {{buff}}</p>{{/buff}}
+{{#burn}}<p><strong>Health Burn</strong> {{burn}}</p>{{/burn}}
+{{#targeting}}<p><strong>Targeting</strong> {{targeting}}</p>{{/targeting}}
+{{#bounty}}<p><strong>Bounty</strong> {{bounty}}</p>{{/bounty}}
+{{#strong}}<p>200% against <strong><img src="Images/graph/{{strong}}.png" class="type"/> {{strong_label}}</strong></p>{{/strong}}
+{{#weak}}<p>50% against <strong><img src="Images/graph/{{weak}}.png" class="type"/> {{weak_label}}</strong></p>{{/weak}}
+</script>
+<script src="tower_graph_data.js"></script>
+<script>
+(function(){
+    $('#tower-graph').on('mouseover', 'a.tower', function(){
+        $(this).addClass('hi');
+        $('#tower-graph').addClass('hovered');
+        var els = [];
+        $.each($(this).attr('class').split(' '), function(i, name) {
+            if(name.substr(0,3) === 'el-') {
+                els.push(name);
+                $('#tower-graph td.elements a.'+name).addClass('hi');
+            }
+        });
+        if(els.length === 1) {
+            $('#tower-graph a.'+els[0]).addClass('hi');
+        } else if(els.length === 2) {
+            $('#tower-graph .triples a.'+els[0]+'.'+els[1]).addClass('hi');
+        } else if(els.length === 3) {
+            $('#tower-graph .duals a.'+els[0]+'.'+els[1]).addClass('hi');
+            $('#tower-graph .duals a.'+els[0]+'.'+els[2]).addClass('hi');
+            $('#tower-graph .duals a.'+els[1]+'.'+els[2]).addClass('hi');
+        }
+        showTooltip($(this).attr('href').substr(1));
+        $(this).append($('#tower-tooltip'));
+        if($(this).position().left / $('#tower-graph').width() > 0.62) {
+            $('#tower-tooltip').addClass('leftish');
+        } else {
+            $('#tower-tooltip').removeClass('leftish');
+        }
+        if($(this).position().top / $('#tower-graph').height() > 0.6) {
+            $('#tower-tooltip').addClass('topish');
+            $('#tower-tooltip').css('margin-top', (0 - $('#tower-tooltip').height() - (2.5 * parseInt($('#tower-graph').css('font-size')))) + 'px');
+        } else {
+            $('#tower-tooltip').removeClass('topish');
+            $('#tower-tooltip').css('margin-top', '1em');
+        }
+    });
+    $('#tower-graph .eff').on('mouseover', 'a.filter', function(){
+        $(this).addClass('hi');
+        $('#tower-graph').addClass('hovered');
+        $('#tower-graph a.f-'+$(this).data('f')).addClass('hi');
+    });
+    $('#tower-graph .rng').on('mouseover', 'a.filter', function(){
+        $(this).addClass('hi');
+        $('#tower-graph').addClass('hovered');
+        $('#tower-graph a.r-'+$(this).data('r')).addClass('hi');
+    });
+    $('#tower-graph').on('mouseout', 'a.tower, a.filter', function(){
+        $('#tower-graph a.tower, #tower-graph a.filter').removeClass('hi');
+        $('#tower-graph').removeClass('hovered');
+        hideTooltip();
+    });
+    
+    var tooltip_tpl = $('#template-tower-graph-tooltip').html();
+    var showTooltip = function(name) {
+        var html = renderTemplate(name);
+        if(html) {
+            $('#tower-tooltip').html(html);
+        }
+        var pos = $('#tower-graph a.t-'+name).position();
+        $('#tower-tooltip').show();
+    };
+    var hideTooltip = function(name) {
+        $('#tower-tooltip').hide();
+    };
+    var renderTemplate = function(name) {
+        var data = tower_graph_data[name];
+        if(!data) return;
+        data.cost = tower_costs[data.elements.length - 1];
+        data.type = data.elements[0];
+        if(data.elements.length > 1) {
+            data.type_1 = data.elements[0];
+            data.type_2 = data.elements[1];
+        }
+        if(data.elements.length > 2) {
+            data.type_3 = data.elements[2];
+        }
+        if(data.strong) {
+            data.strong_label = data.strong.charAt(0).toUpperCase() + data.strong.slice(1);
+            data.weak_label = data.weak.charAt(0).toUpperCase() + data.weak.slice(1);
+        }
+        var html = tooltip_tpl.replace('{{id}}', name);
+        for(var key in data) {
+            if(!data.hasOwnProperty(key)) continue;
+            html = html.split('{{'+key+'}}').join(data[key])
+                .split('{{#'+key+'}}').join("")
+                .split('{{/'+key+'}}').join("");
+        }
+        html = html.replace(/\{\{\#[a-z0-9_]+\}\}.*\{\{\/[a-z0-9_]+\}\}/g, "");
+        return html;
+    };
+    var tower_costs = [
+        '175 / 275 / 1250 / 9200',
+        '275 / 800 / 1900',
+        '1050 / 3000'
+    ];
+    if(window.location.hash !== "") {
+        $('#tower-graph [href='+window.location.hash+']').trigger('mouseover');
+    }
+})();
+</script>
+</body>
+</html>
