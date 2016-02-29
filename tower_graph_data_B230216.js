@@ -1,3 +1,8 @@
+var tower_graph_costs = [
+    '175 / 275 / 1250 / 9200',
+    '275 / 800 / 1900',
+    '1050 / 3000'
+];
 var tower_graph_data = {
     'light': {
         name: "Light",

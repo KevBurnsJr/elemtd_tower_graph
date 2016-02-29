@@ -233,7 +233,7 @@
 {{#strong}}<p>200% against <strong><img src="Images/graph/{{strong}}.png" class="type"/> {{strong_label}}</strong></p>{{/strong}}
 {{#weak}}<p>50% against <strong><img src="Images/graph/{{weak}}.png" class="type"/> {{weak_label}}</strong></p>{{/weak}}
 </script>
-<script src="tower_graph_data.js"></script>
+<script src="tower_graph_data_B290216.js"></script>
 <script>
 (function(){
     $('#tower-graph').on('mouseover', 'a.tower', function(){
@@ -301,7 +301,7 @@
     var renderTemplate = function(name) {
         var data = tower_graph_data[name];
         if(!data) return;
-        data.cost = tower_costs[data.elements.length - 1];
+        data.cost = tower_graph_costs[data.elements.length - 1];
         data.type = data.elements[0];
         if(data.elements.length > 1) {
             data.type_1 = data.elements[0];
@@ -324,11 +324,6 @@
         html = html.replace(/\{\{\#[a-z0-9_]+\}\}.*\{\{\/[a-z0-9_]+\}\}/g, "");
         return html;
     };
-    var tower_costs = [
-        '175 / 275 / 1250 / 9200',
-        '275 / 800 / 1900',
-        '1050 / 3000'
-    ];
     if(window.location.hash !== "") {
         $('#tower-graph [href='+window.location.hash+']').trigger('mouseover');
     }
