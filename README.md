@@ -1,5 +1,7 @@
 This is a recreation of the Element TD tower graph in HTML / CSS / JS.
 
+Demo: http://eletd.hky.me
+
 Fully responsive down to 308px.
 
 File structure mimics that of eletd.com, and includes all of the original site's CSS and Javascript assets to ensure compatibility.
